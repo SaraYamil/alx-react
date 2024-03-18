@@ -3,18 +3,10 @@
   color: #e0354b;
   display: flex;
   align-items: center;
-  padding-top: 20px;
-
-  position: absolute;
-  top: 0;
-  left: 0;
+  border-bottom: 3px solid #e0354b;
 }
 
 .App-header img {
   width: 200px;
   height: 200px;
-}
-
-.App-logo {
-  height: 40vmin;
 }

@@ -4,17 +4,16 @@ table {
   border: 1px solid #ddd;
   font-size: 1.2rem;
   margin-bottom: 15em;
-  width: 90%;
 }
 
 th {
   border-bottom: 1px solid #ddd;
 }
 
-/* th,
+th,
 td {
   width: 80%;
-} */
+}
 
 table {
   margin-left: auto;
