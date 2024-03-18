@@ -2,25 +2,25 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const rowStyle = {
-  backgroundColor: "#f5f5f5ab",
+  backgroundColor: "#f5f5f5", // corrected color without opacity
 };
 
 const headerStyle = {
-  backgroundColor: "#deb5b545",
+  backgroundColor: "#deb5b5", // corrected color without opacity
 };
 
 function CourseListRow({ isHeader, textFirstCell, textSecondCell }) {
   return (
-  <tr style={rowStyle}>
+    <tr style={isHeader ? headerStyle : rowStyle}> {/* Choose style based on isHeader */}
       {isHeader ? (
         textSecondCell === null ? (
-          <th style={headerStyle} colSpan={2}>
+          <th colSpan={2}>
             {textFirstCell}
           </th>
         ) : (
           <>
-            <th style={headerStyle}>{textFirstCell}</th>
-            <th style={headerStyle}>{textSecondCell}</th>
+            <th>{textFirstCell}</th>
+            <th>{textSecondCell}</th>
           </>
         )
       ) : (
@@ -45,3 +45,4 @@ CourseListRow.defaultProps = {
 };
 
 export default CourseListRow;
+
