@@ -10,3 +10,6 @@
 - How to reuse smaller components, keep them pure, and lift its state to principal containers
 - The use of a React Hook and how to create one
 - How to test State changes with Enzyme
+
+
+MR 3asoulla
